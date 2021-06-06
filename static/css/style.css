@@ -1,0 +1,59 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+}
+#image {
+  width: 100%;
+  display: block;
+  max-width: 1000px;
+}
+#img-div {
+  width: 80vw;
+  height: 80vh;
+}
+#tribute-info {
+  clear: both;
+}
+#description-div {
+  width: 64vw;
+  height: 66vh;
+  border: 2px solid black;
+}
+#description-image {
+  width: 50%;
+  max-width: 250px;
+  display: block;
+  float: left;
+}
+#description-paragraph {
+}
+#main {
+  margin-bottom: 30px;
+}
