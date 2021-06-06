@@ -1,26 +1,26 @@
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: ibm-thin;
+  src: url(/static/fonts/IBMPlexSans-Thin.ttf);
 }
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: ibm-regular;
+  src: url(/static/fonts/IBMPlexSans-Regular.ttf);
 }
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: ibm-bold;
+  src: url(/static/fonts/IBMPlexSans-Bold.ttf);
 }
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: noto-thin;
+  src: url(/static/fonts/NotoSansJP-Thin.otf);
 }
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: noto-regular;
+  src: url(/static/fonts/NotoSansJP-Regular.otf);
 }
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: noto-bold;
+  src: url(/static/fonts/NotoSansJP-Bold.otf);
 }
 * {
   padding: 0;
@@ -28,6 +28,23 @@
   box-sizing: border-box;
 }
 body {
+  font-family: noto-regular;
+  text-transform: capitalize;
+  font-size: 1.15rem;
+  letter-spacing: 0.05rem;
+}
+h1 h2 h3 {
+  font-family: ibm-bold;
+}
+#title {
+  text-align: center;
+  background: -webkit-linear-gradient(hsl(0, 0%, 84%), hsl(50, 100%, 44%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 7vw;
+}
+#sup-title {
+  text-align: center;
 }
 #image {
   width: 100%;
