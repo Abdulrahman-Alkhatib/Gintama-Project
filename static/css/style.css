@@ -19,6 +19,10 @@
   src: url(/static/fonts/NotoSansJP-Regular.otf);
 }
 @font-face {
+  font-family: noto-medium;
+  src: url(/static/fonts/NotoSansJP-Medium.otf);
+}
+@font-face {
   font-family: noto-bold;
   src: url(/static/fonts/NotoSansJP-Bold.otf);
 }
@@ -28,32 +32,73 @@
   box-sizing: border-box;
 }
 body {
-  font-family: noto-regular;
+  font-family: "Acme", sans-serif;
   text-transform: capitalize;
-  font-size: 1.15rem;
-  letter-spacing: 0.05rem;
+  font-size: clamp(1rem, 2vw, 1.24rem);
+  letter-spacing: 0.08rem;
+  line-height: 1.6rem;
+  font-weight: 400;
 }
-h1 h2 h3 {
+h1,
+h2,
+h3 {
   font-family: ibm-bold;
+}
+.description-h4 {
+  font-family: noto-regular;
 }
 #title {
   text-align: center;
   background: -webkit-linear-gradient(hsl(0, 0%, 84%), hsl(50, 100%, 44%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 7vw;
+  font-size: clamp(60px, 9vw, 100px);
+  line-height: normal;
 }
 #sup-title {
   text-align: center;
+  line-height: 2rem;
+  color: hsl(0, 0%, 45%);
+  text-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.2);
+  font-size: clamp(13px, 2vw, 20px);
+  animation-name: only-op;
+  animation-duration: 1s;
+  animation-timing-function: linear;
 }
 #image {
   width: 100%;
   display: block;
-  max-width: 1000px;
 }
 #img-div {
   width: 80vw;
-  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.75);
+}
+#img-caption {
+  text-align: center;
+  font-size: clamp(14px, 2vw, 17px);
+  line-height: 35px;
+}
+#what-is-gintama {
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+}
+#basic-story {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+#tribute-link {
+  text-decoration: none;
+  color: hsl(229, 100%, 35%);
+}
+#tribute-link:hover {
+  text-decoration: underline;
+  color: hsl(229, 100%, 43%);
+}
+#tribute-link:active {
+  color: green;
 }
 #tribute-info {
   clear: both;
@@ -73,4 +118,12 @@ h1 h2 h3 {
 }
 #main {
   margin-bottom: 30px;
+}
+@keyframes only-op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
