@@ -44,9 +44,7 @@ h2,
 h3 {
   font-family: ibm-bold;
 }
-.description-h4 {
-  font-family: noto-regular;
-}
+
 #title {
   text-align: center;
   background: -webkit-linear-gradient(hsl(0, 0%, 84%), hsl(50, 100%, 44%));
@@ -68,6 +66,7 @@ h3 {
 #image {
   width: 100%;
   display: block;
+  border-radius: 3px;
 }
 #img-div {
   width: 80vw;
@@ -100,21 +99,81 @@ h3 {
 #tribute-link:active {
   color: green;
 }
-#tribute-info {
-  clear: both;
-}
 #description-div {
-  width: 64vw;
-  height: 66vh;
+  width: 75vw;
   border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+#description-div-image {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.75);
 }
 #description-image {
-  width: 50%;
-  max-width: 250px;
+  width: 100%;
   display: block;
-  float: left;
+  border-radius: 3px;
 }
 #description-paragraph {
+  display: grid;
+  grid-template-rows: 0.8fr 2fr 0.8fr 1.2fr 0.8fr 2fr 0.8fr;
+  grid-template-columns: auto auto;
+}
+.description-h4 {
+  font-family: noto-regular;
+  font-size: clamp(14px, 9%, 22px);
+}
+#description-titles {
+  font-size: clamp(15px, 10%, 24px);
+}
+#story {
+  grid-area: 1/2/1/2;
+}
+#story-con {
+  grid-area: 2/1/2/5;
+}
+#genres {
+  grid-area: 3/1/3/1;
+}
+#genres-con {
+  grid-area: 4/1/4/3;
+}
+#score {
+  grid-area: 5/1/5/1;
+}
+#score-con {
+  grid-area: 6/1/6/2;
+}
+#rank {
+  grid-area: 7/1/7/1;
+}
+#rank-con {
+  grid-area: 8/1/8/2;
+}
+#episodes {
+  grid-area: 3/4/3/4;
+}
+#episodes-con {
+  grid-area: 4/4/4/4;
+}
+#seasons {
+  grid-area: 5/4/5/4;
+}
+#seasons-con {
+  grid-area: 6/4/6/4;
+}
+#release {
+  grid-area: 7/4/7/4;
+}
+#release-con {
+  grid-area: 8/4/8/4;
+}
+#tribute-info {
+  clear: both;
 }
 #main {
   margin-bottom: 30px;
