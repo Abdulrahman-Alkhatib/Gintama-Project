@@ -38,27 +38,30 @@ body {
   letter-spacing: 0.08rem;
   line-height: 1.6rem;
   font-weight: 400;
+  background-image: linear-gradient(19deg, #0f9fc0 0%, #a31be3 100%);
+
+  color: hsl(0, 0%, 95%);
 }
 h1,
 h2,
 h3 {
   font-family: ibm-bold;
 }
-
 #title {
   text-align: center;
-  background: -webkit-linear-gradient(hsl(0, 0%, 84%), hsl(50, 100%, 44%));
+  background: -webkit-linear-gradient(hsl(0deg 0% 100%), hsl(50deg 100% 49%));
+  /* background: -webkit-linear-gradient(hsl(0, 0%, 84%), hsl(50, 100%, 44%)); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: clamp(60px, 9vw, 100px);
+  font-size: clamp(3.75rem, 9vw, 6.25rem);
   line-height: normal;
 }
 #sup-title {
   text-align: center;
   line-height: 2rem;
-  color: hsl(0, 0%, 45%);
-  text-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.2);
-  font-size: clamp(13px, 2vw, 20px);
+  color: hsl(0, 0%, 85%);
+  text-shadow: 2px 5px 7px rgba(5, 4, 4, 0.88);
+  font-size: clamp(0.81rem, 2vw, 1.25rem);
   animation-name: only-op;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -76,9 +79,14 @@ h3 {
   -moz-box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.75);
 }
+#img-div:hover {
+  -webkit-box-shadow: 0px 2px 16px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 16px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 16px -1px rgba(0, 0, 0, 0.75);
+}
 #img-caption {
   text-align: center;
-  font-size: clamp(14px, 2vw, 17px);
+  font-size: clamp(0.88rem, 2vw, 1.06rem);
   line-height: 35px;
 }
 #what-is-gintama {
@@ -86,22 +94,22 @@ h3 {
 }
 #basic-story {
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 #tribute-link {
   text-decoration: none;
-  color: hsl(229, 100%, 35%);
+  color: hsl(229, 72%, 45%);
 }
 #tribute-link:hover {
   text-decoration: underline;
-  color: hsl(229, 100%, 43%);
+  color: hsl(229, 100%, 46%);
 }
 #tribute-link:active {
-  color: green;
+  color: rgb(0, 90, 0);
 }
 #description-div {
   width: 75vw;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -109,9 +117,15 @@ h3 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 12px;
+}
+#description-div-image:hover {
+  -webkit-box-shadow: 0px 2px 12px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 12px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 12px 1px rgba(0, 0, 0, 0.75);
 }
 #description-image {
   width: 100%;
@@ -125,10 +139,10 @@ h3 {
 }
 .description-h4 {
   font-family: noto-regular;
-  font-size: clamp(14px, 9%, 22px);
+  font-size: clamp(0.88rem, 9%, 1.4rem);
 }
 #description-titles {
-  font-size: clamp(15px, 10%, 24px);
+  font-size: clamp(0.94rem, 10%, 1.5rem);
 }
 #story {
   grid-area: 1/2/1/2;
