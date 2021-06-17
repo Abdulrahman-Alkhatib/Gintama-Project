@@ -32,8 +32,13 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+:root {
+  --navColor: hsl(0, 0%, 0%);
+  --primaryColor: hsl(0, 0%, 97%);
+  --primaryTransition: all 0.35s ease-in-out 0s;
+}
 body {
-  font-family: "Acme", sans-serif;
+  font-family: Acme, sans-serif;
   text-transform: capitalize;
   font-size: clamp(1rem, 2vw, 1.24rem);
   letter-spacing: 0.08rem;
@@ -42,7 +47,49 @@ body {
   background-image: -o-linear-gradient(71deg, #0f9fc0 0%, #a31be3 100%);
   background-image: linear-gradient(19deg, #0f9fc0 0%, #a31be3 100%);
 
-  color: hsl(0, 0%, 95%);
+  color: var(--primaryColor);
+}
+ul {
+  list-style: none;
+  background-color: var(--navColor);
+  position: fixed;
+  width: 100vw;
+  overflow: hidden;
+}
+ul li {
+  float: right;
+}
+ul li a {
+  color: var(--primaryColor);
+  text-decoration: none;
+  display: block;
+  padding: 9px 20px;
+  text-align: center;
+  font-family: ibm-bold;
+  font-size: 1rem;
+  transition: var(--primaryTransition);
+}
+ul li a:hover {
+  color: #efce1c;
+  background-color: hsl(0, 0%, 15%);
+}
+#golden {
+  color: #efce1c;
+}
+#logo {
+  float: left;
+}
+#logo-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+#logo-text:hover {
+  color: var(--primaryColor);
+  background-color: black;
+}
+#active {
+  color: #efce1c;
 }
 h1,
 h2,
